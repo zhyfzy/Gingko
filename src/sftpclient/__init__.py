@@ -9,7 +9,7 @@ def main():
     with paramiko.Transport(('localhost', 1996)) as transport:
         transport.connect(username='admin', password='admin', pkey=pkey)
         sftp = paramiko.SFTPClient.from_transport(transport)
-        sftp.put(local_path,remote_path,command='none',pathinfile='none')
+        sftp.put(local_path,remote_path,selfinstall=True)
 
 if __name__ == '__main__':
     main()

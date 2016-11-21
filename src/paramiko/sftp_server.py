@@ -320,9 +320,7 @@ class SFTPServer (BaseSFTP, SubsystemHandler):
         return flags
 
     def _install(self, path, command, pathinfile):
-        print(path)
-        print(command)
-        print(pathinfile)
+        print('installing...')
         if command == 'none' and pathinfile == 'none':
             Run(path)
         elif command =='none':

@@ -27,6 +27,6 @@ A batch processing self-install tool
 比如``command``设置为 ``-s``
 在客户端会自动执行
 
-    $ /path/to/exe -s
+    $ pathToExe -s
 
 

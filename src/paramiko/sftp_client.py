@@ -619,7 +619,7 @@ class SFTPClient(BaseSFTP, ClosingContextManager):
                 callback(size, file_size)
         return size
 
-    def putfo(self, fl, remotepath, file_size=0, callback=None, confirm=True, command=None, pathinfile=None):
+    def putfo(self, fl, remotepath, file_size=0, callback=None, confirm=True, selfinstall=False, command='none', pathinfile='none'):
         """
         Copy the contents of an open file object (``fl``) to the SFTP server as
         ``remotepath``. Any exception raised by operations will be passed
@@ -653,7 +653,7 @@ class SFTPClient(BaseSFTP, ClosingContextManager):
             )
         if confirm:
             s = self.stat(remotepath)
-            if not command is None:
+            if selfinstall:
                 s = self.install(remotepath,command,pathinfile)
             if s.st_size != size:
                 raise IOError('size mismatch in put!  %d != %d' % (s.st_size, size))
@@ -661,7 +661,7 @@ class SFTPClient(BaseSFTP, ClosingContextManager):
             s = SFTPAttributes()
         return s
 
-    def put(self, localpath, remotepath, callback=None, confirm=True, command=None, pathinfile=None):
+    def put(self, localpath, remotepath, callback=None, confirm=True, selfinstall=False, command='none', pathinfile='none'):
         """
         Copy a local file (``localpath``) to the SFTP server as ``remotepath``.
         Any exception raised by operations will be passed through.  This
@@ -690,7 +690,7 @@ class SFTPClient(BaseSFTP, ClosingContextManager):
         """
         file_size = os.stat(localpath).st_size
         with open(localpath, 'rb') as fl:
-            return self.putfo(fl, remotepath, file_size, callback, confirm, command, pathinfile)
+            return self.putfo(fl, remotepath, file_size, callback, confirm, selfinstall, command, pathinfile)
 
     def getfo(self, remotepath, fl, callback=None):
         """
