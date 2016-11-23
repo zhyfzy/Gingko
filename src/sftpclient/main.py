@@ -23,10 +23,10 @@ class sftp(threading.Thread):
         self.pathinfile = pathinfile
 
     def run(self):
-        transport = paramiko.Transport((self.addr, int(self.port)))
-        transport.connect(username='admin', password='admin', pkey=self.pkey)
-        sftp = paramiko.SFTPClient.from_transport(transport)
-        sftp.put(self.local_path, self.remote_path, selfinstall=True, command=self.command, pathinfile=self.pathinfile)
+        with paramiko.Transport((self.addr, int(self.port))) as transport:
+            transport.connect(username='admin', password='admin', pkey=self.pkey)
+            sftp = paramiko.SFTPClient.from_transport(transport)
+            sftp.put(self.local_path, self.remote_path, selfinstall=True, command=self.command, pathinfile=self.pathinfile)
 
 
 class MyApp(QtGui.QMainWindow, Ui_MainWindow):
