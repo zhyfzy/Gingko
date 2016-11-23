@@ -1,4 +1,5 @@
 # Gingko
+
 A batch processing self-install tool 
 一个通过SFTP传输文件并在目标机中执行自动安装的工具
 
@@ -10,6 +11,10 @@ A batch processing self-install tool
     $ winrar
 
 可以运行winrar程序
+
+安装cryptography
+
+    $ pip install cryptography
 
 ## 使用方法
 
@@ -27,6 +32,4 @@ A batch processing self-install tool
 比如``command``设置为 ``-s``
 在客户端会自动执行
 
-    $ /path/to/exe -s
-
-
+    $ path/to/exe -s

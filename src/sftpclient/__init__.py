@@ -1,6 +1,6 @@
 import paramiko
 
-RSA_key_path = 'D:/si/private.key'
+RSA_key_path = 'D:/tmp/private.key'
 remote_path = 'cloudmusic.exe'
 local_path = 'cloudmusic.exe'
 

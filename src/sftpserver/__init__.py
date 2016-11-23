@@ -33,7 +33,6 @@ import textwrap
 import paramiko
 
 from sftpserver.stub_sftp import StubServer, StubSFTPServer
-import sftpserver.install
 
 
 HOST, PORT = 'localhost', 3373
