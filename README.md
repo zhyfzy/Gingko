@@ -12,6 +12,10 @@ A batch processing self-install tool
 
 可以运行winrar程序
 
+安装cryptography
+
+    $ pip install cryptography
+
 ## 使用方法
 
 使用以下指令上传文件到SFTP Server
