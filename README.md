@@ -2,6 +2,7 @@
 
 A batch processing self-install tool 
 一个通过SFTP传输文件并在目标机中执行自动安装的工具
+使用Python2.7实现
 
 ## 安装依赖包
 
@@ -15,6 +16,8 @@ A batch processing self-install tool
 安装cryptography
 
     $ pip install cryptography
+	
+在[这里](https://nmap.org/download.html)下载windows版本的nmap，以及在[这里](https://riverbankcomputing.com/software/pyqt/download)下载PyQt（选择python2.7版本），并执行安装
 
 ## 使用方法
 
