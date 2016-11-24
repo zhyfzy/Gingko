@@ -7,7 +7,7 @@ import threading
 import sys
 from PyQt4 import QtCore, QtGui, uic
 
-qtCreatorFile = "src\\sftpclient\\sftp.ui"  # Enter file here.
+qtCreatorFile = "src/sftpclient/sftp.ui"  # Enter file here.
 
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
@@ -43,8 +43,8 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         self._item.setText('127.0.0.1')
         self._net.setText('192.168.201.1-255')
         self._port.setText('1996')
-        self._installor.setText('asset\\client\\cloudmusic.exe')
-        self._key.setText('asset\\rsa_demo.key')
+        self._installor.setText('asset/client/cloudmusic.exe')
+        self._key.setText('asset/rsa_demo.key')
         self.itemnum = 0
 
     def __ok(self):
@@ -72,7 +72,9 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         self.itemnum = self.itemnum - 1
 
     def __choose(self):
-        print('ok')
+        fileName = QtGui.QFileDialog.getOpenFileName(self, self.tr("Open"), ".")
+        self._installor.setText(fileName)
+        print(fileName)
 
     def __additem(self):
         self._list2.addItem(str(self._item.text()))
@@ -84,7 +86,7 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         command = str(self._command.text())
         pathinfile = str(self._pathinfile.text())
         local_path = str(self._installor.text())
-        remote_path = local_path.split('\\')[-1]
+        remote_path = local_path.split('/')[-1]
         key = self._key.text()
         pkey = paramiko.RSAKey.from_private_key_file(key)
 
@@ -95,7 +97,6 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
             pathinfile = 'none'
 
         i = 0
-
 
         while (i <= self.itemnum - 1):
             item = self._list2.item(i)

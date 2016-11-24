@@ -1,178 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.31 scan initiated Wed Nov 23 21:19:36 2016 as: nmap -sP -oX result.xml 192.168.201.1-255 -->
-<nmaprun scanner="nmap" args="nmap -sP -oX result.xml 192.168.201.1-255" start="1479907176" startstr="Wed Nov 23 21:19:36 2016" version="7.31" xmloutputversion="1.04">
+<!-- Nmap 7.31 scan initiated Thu Nov 24 15:09:13 2016 as: nmap -sP -oX result.xml 192.168.102.1-255 -->
+<nmaprun scanner="nmap" args="nmap -sP -oX result.xml 192.168.102.1-255" start="1479971353" startstr="Thu Nov 24 15:09:13 2016" version="7.31" xmloutputversion="1.04">
 <verbose level="0"/>
 <debugging level="0"/>
 <host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.1" addrtype="ipv4"/>
-<address addr="52:54:00:69:F2:AF" addrtype="mac" vendor="QEMU virtual NIC"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.2" addrtype="ipv4"/>
-<address addr="00:07:E9:0F:92:A3" addrtype="mac" vendor="Intel"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.8" addrtype="ipv4"/>
-<address addr="0C:82:68:2C:DE:D2" addrtype="mac" vendor="Tp-link Technologies"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.10" addrtype="ipv4"/>
-<address addr="5A:AE:B6:EC:04:D8" addrtype="mac"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.26" addrtype="ipv4"/>
-<address addr="EC:26:CA:83:19:3D" addrtype="mac" vendor="Tp-link Technologies"/>
+<address addr="192.168.102.129" addrtype="ipv4"/>
+<address addr="00:0C:29:19:B6:E9" addrtype="mac" vendor="VMware"/>
 <hostnames>
 </hostnames>
 <times srtt="0" rttvar="5000" to="100000"/>
 </host>
 <host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.30" addrtype="ipv4"/>
-<address addr="90:B1:1C:08:D2:82" addrtype="mac" vendor="Dell"/>
+<address addr="192.168.102.254" addrtype="ipv4"/>
+<address addr="00:50:56:FA:65:D6" addrtype="mac" vendor="VMware"/>
 <hostnames>
 </hostnames>
 <times srtt="0" rttvar="5000" to="100000"/>
 </host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.33" addrtype="ipv4"/>
-<address addr="98:90:96:C3:8E:8A" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.35" addrtype="ipv4"/>
-<address addr="F8:BC:12:4A:C2:78" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.58" addrtype="ipv4"/>
-<address addr="98:90:96:9F:3E:77" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.62" addrtype="ipv4"/>
-<address addr="D4:EE:07:45:3A:1D" addrtype="mac" vendor="Hiwifi"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.63" addrtype="ipv4"/>
-<address addr="40:8D:5C:E5:86:08" addrtype="mac" vendor="Giga-byte Technology"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.101" addrtype="ipv4"/>
-<address addr="D4:AE:52:B2:8D:D0" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.105" addrtype="ipv4"/>
-<address addr="74:86:7A:F1:80:6A" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.130" addrtype="ipv4"/>
-<address addr="10:1F:74:45:81:E1" addrtype="mac" vendor="Hewlett Packard"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.131" addrtype="ipv4"/>
-<address addr="C4:34:6B:18:21:A7" addrtype="mac" vendor="Hewlett Packard"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.171" addrtype="ipv4"/>
-<address addr="B0:83:FE:54:23:BA" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.175" addrtype="ipv4"/>
-<address addr="98:5A:EB:DA:5B:A1" addrtype="mac" vendor="Apple"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.176" addrtype="ipv4"/>
-<address addr="74:86:7A:F1:8B:9A" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.178" addrtype="ipv4"/>
-<address addr="F8:BC:12:4A:DC:E0" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="0" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.179" addrtype="ipv4"/>
-<address addr="C8:1F:66:F3:84:BA" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.180" addrtype="ipv4"/>
-<address addr="90:B1:1C:08:CF:A0" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.199" addrtype="ipv4"/>
-<address addr="D6:45:06:25:09:AA" addrtype="mac"/>
-<hostnames>
-</hostnames>
-<times srtt="2000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.200" addrtype="ipv4"/>
-<address addr="5A:5E:BF:B4:55:1D" addrtype="mac"/>
-<hostnames>
-</hostnames>
-<times srtt="2000" rttvar="5000" to="100000"/>
-</host>
-<host><status state="up" reason="arp-response" reason_ttl="0"/>
-<address addr="192.168.201.227" addrtype="ipv4"/>
-<address addr="78:2B:CB:01:9F:EE" addrtype="mac" vendor="Dell"/>
-<hostnames>
-</hostnames>
-<times srtt="1000" rttvar="5000" to="100000"/>
-</host>
-<runstats><finished time="1479907177" timestr="Wed Nov 23 21:19:37 2016" elapsed="1.80" summary="Nmap done at Wed Nov 23 21:19:37 2016; 255 IP addresses (24 hosts up) scanned in 1.80 seconds" exit="success"/><hosts up="24" down="231" total="255"/>
+<runstats><finished time="1479971359" timestr="Thu Nov 24 15:09:19 2016" elapsed="5.14" summary="Nmap done at Thu Nov 24 15:09:19 2016; 255 IP addresses (2 hosts up) scanned in 5.14 seconds" exit="success"/><hosts up="2" down="253" total="255"/>
 </runstats>
 </nmaprun>
