@@ -22,7 +22,7 @@ SFTPClient 已经实现了与用户的交互```UI```
 
 ## SFTPserver使用前准备
 
-SFTPserver接受来自```SFTPclient```的安装包以及自动安装命令（该命令通过修改```paramiko```底层代码实现，所以需要实现删除通过```pip```等安装的原版```paramiko```）
+SFTPserver接受来自```SFTPclient```的安装包以及自动安装命令（该命令通过修改```paramiko```底层代码实现，所以需要事先删除通过```pip```等安装的原版```paramiko```，并使用src目录中修改过的）
 
 SFTPserver既可以在```Windows```中使用(Windows7和Windows10中测试通过)，也可以在linux中使用(Ubuntu 16.04 LTS 测试通过)
 
