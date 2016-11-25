@@ -8,7 +8,7 @@ A batch processing self-install tool
 
 ## SFTPClient使用前的准备
 
-SFTPClient 用于给多个```SFTPserver```批量分发安装包，并在运行```SFTPserver```的主机中安装这些文件
+SFTPClient 用于给多个SFTPserver批量分发安装包，并在运行SFTPserver的主机中安装这些文件
 
 SFTPClient 已经实现了与用户的交互```UI```
 
@@ -22,9 +22,9 @@ SFTPClient 已经实现了与用户的交互```UI```
 
 ## SFTPserver使用前准备
 
-SFTPserver接受来自```SFTPclient```的安装包以及自动安装命令（该命令通过修改```paramiko```底层代码实现，所以需要事先删除通过```pip```等安装的原版```paramiko```，并使用src目录中修改过的）
+SFTPserver接受来自SFTPclient的安装包以及自动安装命令（该命令通过修改```paramiko```底层代码实现，所以需要事先删除通过```pip```等安装的原版```paramiko```，并使用src目录中修改过的）
 
-SFTPserver既可以在```Windows```中使用(Windows7和Windows10中测试通过)，也可以在linux中使用(Ubuntu 16.04 LTS 测试通过)
+SFTPserver既可以在 Windows 中使用(Windows7和Windows10中测试通过)，也可以在linux中使用(Ubuntu 16.04 LTS 测试通过)
 
 使用前需要将winrar的目录添加到环境变量``path``中，并进行测试
 
@@ -39,6 +39,8 @@ SFTPserver既可以在```Windows```中使用(Windows7和Windows10中测试通过
 启动SFTPserver
 
     $ ./src/sftpserver/__init__.py -k ./asset/rsa_demo.key -p 1996 --host=192.168.102.130
+
+请将```-k```为您自己的rsa私钥，```-p```为端口号,```--host server```所在的服务器的ip地址
 
 ## 使用方法
 
