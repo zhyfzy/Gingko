@@ -26,11 +26,9 @@ SFTPserver接受来自SFTPclient的安装包以及自动安装命令（该命令
 
 SFTPserver既可以在 Windows 中使用(Windows7和Windows10中测试通过)，也可以在linux中使用(Ubuntu 16.04 LTS 测试通过)
 
-使用前需要将winrar的目录添加到环境变量``path``中，并进行测试
+（仅windows下）使用前需要将winrar的目录添加到环境变量``path``中，并进行测试
 
     $ winrar
-
-可以运行winrar程序
 
 安装cryptography
 
