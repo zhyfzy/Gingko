@@ -35,7 +35,7 @@ import paramiko
 from sftpserver.stub_sftp import StubServer, StubSFTPServer
 
 
-HOST, PORT = 'localhost', 3373
+HOST, PORT = '192.168.102.130', 3373
 BACKLOG = 10
 
 
