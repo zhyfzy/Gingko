@@ -36,6 +36,9 @@ SFTPserver既可以在```Windows```中使用(Windows7和Windows10中测试通过
 
     $ pip install cryptography
 	
+启动SFTPserver
+
+    $ ./src/sftpserver/__init__.py -k ./asset/rsa_demo.key -p 1996 --host=192.168.102.130
 
 ## 使用方法
 
